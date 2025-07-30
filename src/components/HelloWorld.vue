@@ -15,7 +15,7 @@ const show = () => {
   <div>
     <Toast position="top-center" />
     <div>
-      <Button size="small" label="Show" @click="show()" />
+      <Button size="small" label="Show Toast" @click="show()" />
       <Button size="small" label="Submit" />
     </div>
 
