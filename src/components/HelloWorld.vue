@@ -14,8 +14,10 @@ const show = () => {
 <template>
   <div>
     <Toast position="top-center" />
-    <Button label="Show" @click="show()" />
-    <Button label="Submit" />
+    <div>
+      <Button label="Show" @click="show()" />
+      <Button label="Submit" />
+    </div>
 
     <div>Hello</div>
 
