@@ -19,23 +19,12 @@ export const MyPreset = definePreset(Aura, {
   components: {
     button: {
       root: {
-        paddingX: '2rem',
-        paddingY: '.2rem',
+        sm: {
+          paddingX: '2.2rem',
+          paddingY: '.2rem',
+        },
       },
       colorScheme: {
-        light: {
-          root: {
-            primary: {
-              background: '{primary.100}',
-              hoverBackground: '{primary.900}',
-            },
-          },
-          text: {
-            primary: {
-              color: '{primary.500}',
-            },
-          },
-        },
         dark: {
           root: {
             primary: {
