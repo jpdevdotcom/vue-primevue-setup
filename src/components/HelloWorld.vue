@@ -13,9 +13,11 @@ const show = () => {
 
 <template>
   <div>
-    <Toast />
+    <Toast position="top-center" />
     <Button label="Show" @click="show()" />
     <Button label="Submit" />
+
+    <div>Hello</div>
 
     <div class="card flex justify-center">
       <Image
