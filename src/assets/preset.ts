@@ -38,5 +38,18 @@ export const MyPreset = definePreset(Aura, {
         },
       },
     },
+    toast: {
+      icon: {
+        size: '1rem',
+      },
+      summary: {
+        fontSize: '.9rem',
+      },
+      css: `
+            .p-toast-summary {
+                margin-top: -3.5px;
+            }
+        `,
+    },
   },
 })

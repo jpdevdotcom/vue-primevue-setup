@@ -7,7 +7,7 @@ import { useToast } from 'primevue/usetoast'
 const toast = useToast()
 
 const show = () => {
-  toast.add({ severity: 'success', summary: 'Info', detail: 'Message Content', life: 3000 })
+  toast.add({ severity: 'info', summary: 'Info', detail: 'Message Content', life: 3000 })
 }
 </script>
 
