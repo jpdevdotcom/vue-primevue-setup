@@ -49,7 +49,14 @@ export const MyPreset = definePreset(Aura, {
             .p-toast-summary {
                 margin-top: -3.5px;
             }
+
+            .p-toast-detail {
+                margin-top: -.4rem;
+            }
         `,
+      detail: {
+        fontSize: '.8rem',
+      },
     },
   },
 })
