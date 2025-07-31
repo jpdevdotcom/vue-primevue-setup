@@ -4,6 +4,7 @@ import Image from 'primevue/image'
 import Toast from 'primevue/toast'
 import { useToast } from 'primevue/usetoast'
 import Chart from 'primevue/chart'
+import ImageCompare from 'primevue/imagecompare'
 
 import { ref, onMounted } from 'vue'
 
@@ -113,6 +114,17 @@ const setChartOptions = () => {
 
     <div class="card">
       <Chart type="line" :data="chartData" :options="chartOptions" class="h-[30rem]" />
+    </div>
+
+    <div class="card flex justify-center">
+      <ImageCompare class="shadow-lg">
+        <template #left>
+          <img src="https://primefaces.org/cdn/primevue/images/compare/island1.jpg" />
+        </template>
+        <template #right>
+          <img src="https://primefaces.org/cdn/primevue/images/compare/island2.jpg" />
+        </template>
+      </ImageCompare>
     </div>
   </div>
 </template>
