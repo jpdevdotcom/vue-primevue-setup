@@ -83,7 +83,7 @@ const setChartOptions = () => {
 </script>
 
 <template>
-  <div>
+  <div class="w-full">
     <Toast position="top-center" />
     <div>
       <Button size="small" label="Show Toast" @click="show()" />
@@ -96,7 +96,6 @@ const setChartOptions = () => {
       <Image
         src="https://primefaces.org/cdn/primevue/images/galleria/galleria10.jpg"
         alt="Image"
-        width="250"
         preview
       />
     </div>
