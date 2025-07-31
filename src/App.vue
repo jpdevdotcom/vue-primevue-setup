@@ -3,8 +3,8 @@ import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <header class="flex items-center justify-center">
-    <div class="wrapper">
+  <header>
+    <div class="w-full">
       <HelloWorld msg="You did it!" />
     </div>
   </header>
