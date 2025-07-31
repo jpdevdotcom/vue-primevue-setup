@@ -39,6 +39,9 @@ export const MyPreset = definePreset(Aura, {
       },
     },
     toast: {
+      root: {
+        width: '20rem',
+      },
       icon: {
         size: '1rem',
       },
