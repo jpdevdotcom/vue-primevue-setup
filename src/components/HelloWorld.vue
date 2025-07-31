@@ -13,30 +13,43 @@ const show = () => {
   toast.add({ severity: 'info', summary: 'Info', detail: 'Message Content', life: 3000 })
 }
 
+const chartData = ref()
+const chartOptions = ref()
+
 onMounted(() => {
   chartData.value = setChartData()
   chartOptions.value = setChartOptions()
 })
 
-const chartData = ref()
-const chartOptions = ref()
-
 const setChartData = () => {
   const documentStyle = getComputedStyle(document.documentElement)
 
   return {
-    labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+    labels: [
+      'January',
+      'February',
+      'March',
+      'April',
+      'May',
+      'June',
+      'July',
+      'August',
+      'September',
+      'October',
+      'November',
+      'December',
+    ],
     datasets: [
       {
         label: 'First Dataset',
-        data: [65, 59, 80, 81, 56, 55, 40],
+        data: [65, 59, 80, 81, 56, 55, 40, 55, 98, 82, 56, 45],
         fill: false,
         borderColor: documentStyle.getPropertyValue('--p-cyan-500'),
         tension: 0.4,
       },
       {
         label: 'Second Dataset',
-        data: [28, 48, 40, 19, 86, 27, 90],
+        data: [28, 48, 40, 19, 86, 27, 90, 12, 45, 67, 89, 34],
         fill: false,
         borderColor: documentStyle.getPropertyValue('--p-gray-500'),
         tension: 0.4,
@@ -51,8 +64,6 @@ const setChartOptions = () => {
   const surfaceBorder = documentStyle.getPropertyValue('--p-content-border-color')
 
   return {
-    maintainAspectRatio: false,
-    aspectRatio: 0.6,
     plugins: {
       legend: {
         labels: {
